@@ -7,6 +7,7 @@ author: "23f3000228@ds.study.iitm.ac.in"
 paginate: true
 header: "DataFlow Analytics Platform"
 footer: "Technical Documentation • Page {{page}} of {{pages}}"
+math: mathjax
 style: |
   /* Custom theme specification */
   :root {
@@ -65,74 +66,31 @@ style: |
 
 ---
 
-# Table of Contents
+# Mathematical Equations
 
-1. **Platform Overview**
-2. **Architecture Design**
-3. **Core Components**
-4. **Performance Metrics**
-5. **API Documentation**
-6. **Deployment Guide**
-7. **Mathematical Foundation**
+## Algorithmic Complexity
+
+**Time Complexity:**
+$$
+T(n) = O(n \log n)
+$$
+
+**Space Complexity:**
+$$
+S(n) = O(n)
+$$
+
+**Big O Notation Examples:**
+- $O(1)$ - Constant time
+- $O(\log n)$ - Logarithmic time  
+- $O(n)$ - Linear time
+- $O(n^2)$ - Quadratic time
 
 ---
 
-# Performance Metrics
+# Advanced Mathematics
 
-## Algorithmic Complexity Analysis
-
-### Time Complexity Equations:
-
-**Data Processing Pipeline:**
-$$
-T(n) = O(n \log n) + O(k \cdot m)
-$$
-
-Where:
-- $n$ = number of data points
-- $k$ = number of processing nodes  
-- $m$ = complexity per operation
-
-**Memory Usage:**
-$$
-M(n) = O(n) + O(\sqrt{n} \cdot \log n)
-$$
-
----
-
-# Mathematical Foundation
-
-## Performance Optimization Algorithms
-
-### Streaming Data Processing:
-
-**Moving Average Calculation:**
-$$
-MA_t = \frac{1}{w} \sum_{i=t-w+1}^{t} x_i
-$$
-
-**Exponential Smoothing:**
-$$
-S_t = \alpha \cdot x_t + (1 - \alpha) \cdot S_{t-1}
-$$
-
-### Machine Learning Integration:
-
-**Gradient Descent Update Rule:**
-$$
-\theta_{t+1} = \theta_t - \eta \cdot \nabla J(\theta_t)
-$$
-
-**Linear Regression Cost Function:**
-$$
-J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)})^2
-$$
-
----
-
-# Advanced Mathematical Concepts
-
-## Statistical Analysis
+## Statistical Formulas
 
 **Normal Distribution:**
 $$
@@ -141,12 +99,54 @@ $$
 
 **Bayes' Theorem:**
 $$
-P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}
+P(A|B) = \frac{P(B|A)P(A)}{P(B)}
 $$
+
+**Linear Regression:**
+$$
+y = \beta_0 + \beta_1x + \epsilon
+$$
+
+---
+
+# Machine Learning Equations
+
+## Gradient Descent
+
+**Update Rule:**
+$$
+\theta := \theta - \alpha \nabla J(\theta)
+$$
+
+**Cost Function:**
+$$
+J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)})^2
+$$
+
+**Sigmoid Function:**
+$$
+\sigma(z) = \frac{1}{1 + e^{-z}}
+$$
+
+---
+
+# Matrix Operations
+
+## Linear Algebra
 
 **Matrix Multiplication:**
 $$
-C_{ij} = \sum_{k=1}^{n} A_{ik} \cdot B_{kj}
+C = AB \text{ where } C_{ij} = \sum_{k=1}^{n} A_{ik}B_{kj}
+$$
+
+**Dot Product:**
+$$
+\mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} a_i b_i
+$$
+
+**Eigenvalue Equation:**
+$$
+A\mathbf{v} = \lambda\mathbf{v}
 $$
 
 ---
