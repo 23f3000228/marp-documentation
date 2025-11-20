@@ -37,6 +37,14 @@ style: |
     color: white;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
   }
+  
+  .code-block {
+    background: #1e293b;
+    color: #e2e8f0;
+    padding: 20px;
+    border-radius: 8px;
+    font-family: 'Fira Code', monospace;
+  }
 ---
 
 <!-- _class: lead -->
@@ -83,10 +91,4 @@ style: |
 
 ## High-Level System Architecture
 
-```mermaid
-graph TB
-    A[Data Sources] --> B[Ingestion Layer]
-    B --> C[Processing Engine]
-    C --> D[Storage Layer]
-    D --> E[Analytics API]
-    E --> F[Client Applications]
+**Data Flow:**
