@@ -7,7 +7,6 @@ author: "23f3000228@ds.study.iitm.ac.in"
 paginate: true
 header: "DataFlow Analytics Platform"
 footer: "Technical Documentation • Page {{page}} of {{pages}}"
-math: mathjax
 style: |
   /* Custom theme specification */
   :root {
@@ -68,86 +67,92 @@ style: |
 
 # Mathematical Equations
 
-## Algorithmic Complexity
+## Algorithmic Complexity Analysis
 
-**Time Complexity:**
-$$
-T(n) = O(n \log n)
-$$
+**Time Complexity:** $T(n) = O(n \log n)$
 
-**Space Complexity:**
-$$
-S(n) = O(n)
-$$
+**Space Complexity:** $S(n) = O(n)$
 
-**Big O Notation Examples:**
+**Memory Usage:** $M(n) = O(n) + O(\sqrt{n} \cdot \log n)$
+
+**Big O Notation:**
 - $O(1)$ - Constant time
 - $O(\log n)$ - Logarithmic time  
 - $O(n)$ - Linear time
 - $O(n^2)$ - Quadratic time
+- $O(2^n)$ - Exponential time
 
 ---
 
-# Advanced Mathematics
+# Statistical Formulas
 
-## Statistical Formulas
+## Probability & Statistics
 
-**Normal Distribution:**
-$$
-f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
-$$
+**Normal Distribution PDF:**
+$f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}$
 
 **Bayes' Theorem:**
-$$
-P(A|B) = \frac{P(B|A)P(A)}{P(B)}
-$$
+$P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}$
 
-**Linear Regression:**
-$$
-y = \beta_0 + \beta_1x + \epsilon
-$$
+**Expected Value:**
+$E[X] = \sum_{i=1}^{n} x_i P(x_i)$
+
+**Variance:**
+$\sigma^2 = E[(X - \mu)^2]$
 
 ---
 
 # Machine Learning Equations
 
-## Gradient Descent
+## Core Algorithms
 
-**Update Rule:**
-$$
-\theta := \theta - \alpha \nabla J(\theta)
-$$
+**Linear Regression:**
+$y = \beta_0 + \beta_1x_1 + \beta_2x_2 + \cdots + \beta_nx_n + \epsilon$
 
-**Cost Function:**
-$$
-J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)})^2
-$$
+**Gradient Descent Update:**
+$\theta_{t+1} = \theta_t - \eta \cdot \nabla J(\theta_t)$
+
+**Mean Squared Error:**
+$MSE = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2$
 
 **Sigmoid Function:**
-$$
-\sigma(z) = \frac{1}{1 + e^{-z}}
-$$
+$\sigma(z) = \frac{1}{1 + e^{-z}}$
 
 ---
 
-# Matrix Operations
+# Advanced Mathematics
 
-## Linear Algebra
+## Linear Algebra & Calculus
 
 **Matrix Multiplication:**
-$$
-C = AB \text{ where } C_{ij} = \sum_{k=1}^{n} A_{ik}B_{kj}
-$$
+$C_{ij} = \sum_{k=1}^{n} A_{ik} \cdot B_{kj}$
 
 **Dot Product:**
-$$
-\mathbf{a} \cdot \mathbf{b} = \sum_{i=1}^{n} a_i b_i
-$$
+$\vec{a} \cdot \vec{b} = \sum_{i=1}^{n} a_i b_i$
 
-**Eigenvalue Equation:**
-$$
-A\mathbf{v} = \lambda\mathbf{v}
-$$
+**Derivative Definition:**
+$f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}$
+
+**Integral:**
+$\int_a^b f(x) dx = F(b) - F(a)$
+
+---
+
+# Performance Metrics
+
+## System Performance Equations
+
+**Throughput:**
+$Throughput = \frac{Requests}{Time}$
+
+**Latency:**
+$Latency = Processing\ Time + Queue\ Time$
+
+**Utilization:**
+$Utilization = \frac{Busy\ Time}{Total\ Time}$
+
+**Efficiency:**
+$Efficiency = \frac{Actual\ Output}{Theoretical\ Maximum}$
 
 ---
 
