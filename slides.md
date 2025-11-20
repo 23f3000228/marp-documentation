@@ -77,8 +77,85 @@ style: |
 
 ---
 
-# Architecture Design
+# Performance Metrics
 
-## High-Level System Architecture
+## Algorithmic Complexity Analysis
 
-**Data Flow:**
+### Time Complexity Equations:
+
+**Data Processing Pipeline:**
+$$
+T(n) = O(n \log n) + O(k \cdot m)
+$$
+
+Where:
+- $n$ = number of data points
+- $k$ = number of processing nodes  
+- $m$ = complexity per operation
+
+**Memory Usage:**
+$$
+M(n) = O(n) + O(\sqrt{n} \cdot \log n)
+$$
+
+---
+
+# Mathematical Foundation
+
+## Performance Optimization Algorithms
+
+### Streaming Data Processing:
+
+**Moving Average Calculation:**
+$$
+MA_t = \frac{1}{w} \sum_{i=t-w+1}^{t} x_i
+$$
+
+**Exponential Smoothing:**
+$$
+S_t = \alpha \cdot x_t + (1 - \alpha) \cdot S_{t-1}
+$$
+
+### Machine Learning Integration:
+
+**Gradient Descent Update Rule:**
+$$
+\theta_{t+1} = \theta_t - \eta \cdot \nabla J(\theta_t)
+$$
+
+**Linear Regression Cost Function:**
+$$
+J(\theta) = \frac{1}{2m} \sum_{i=1}^{m} (h_\theta(x^{(i)}) - y^{(i)})^2
+$$
+
+---
+
+# Advanced Mathematical Concepts
+
+## Statistical Analysis
+
+**Normal Distribution:**
+$$
+f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
+$$
+
+**Bayes' Theorem:**
+$$
+P(A|B) = \frac{P(B|A) \cdot P(A)}{P(B)}
+$$
+
+**Matrix Multiplication:**
+$$
+C_{ij} = \sum_{k=1}^{n} A_{ik} \cdot B_{kj}
+$$
+
+---
+
+<!-- _class: lead -->
+<!-- _paginate: false -->
+
+# **Thank You**
+
+## Questions & Discussion
+
+**Documentation Maintainer:** 23f3000228@ds.study.iitm.ac.in
