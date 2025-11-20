@@ -35,14 +35,7 @@ style: |
   
   .dark-background {
     color: white;
-  }
-  
-  .code-block {
-    background: #1e293b;
-    color: #e2e8f0;
-    padding: 20px;
-    border-radius: 8px;
-    font-family: 'Fira Code', monospace;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
   }
 ---
 
@@ -55,18 +48,6 @@ style: |
 **Technical Writer:** 23f3000228@ds.study.iitm.ac.in  
 **Version:** 2.1.0  
 **Last Updated:** December 2024
-
----
-
-# Table of Contents
-
-1. **Platform Overview**
-2. **Architecture Design**
-3. **Core Components**
-4. **Performance Metrics**
-5. **API Documentation**
-6. **Deployment Guide**
-7. **Mathematical Foundation**
 
 ---
 
@@ -86,6 +67,18 @@ style: |
 
 ---
 
+# Table of Contents
+
+1. **Platform Overview**
+2. **Architecture Design**
+3. **Core Components**
+4. **Performance Metrics**
+5. **API Documentation**
+6. **Deployment Guide**
+7. **Mathematical Foundation**
+
+---
+
 # Architecture Design
 
 ## High-Level System Architecture
@@ -97,7 +90,3 @@ graph TB
     C --> D[Storage Layer]
     D --> E[Analytics API]
     E --> F[Client Applications]
-    
-    B --> G[Stream Processing]
-    C --> H[Batch Processing]
-    D --> I[Real-time Queries]
