@@ -18,7 +18,6 @@ style: |
   }
   
   section {
-    background: linear-gradient(135deg, var(--light-color) 0%, #ffffff 100%);
     font-family: 'Inter', 'Segoe UI', sans-serif;
     padding: 60px;
   }
@@ -37,14 +36,6 @@ style: |
     color: white;
     text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
   }
-  
-  .code-block {
-    background: #1e293b;
-    color: #e2e8f0;
-    padding: 20px;
-    border-radius: 8px;
-    font-family: 'Fira Code', monospace;
-  }
 ---
 
 <!-- _class: lead -->
@@ -59,17 +50,16 @@ style: |
 
 ---
 
+<!-- This slide has a background image with content on top -->
 ![bg](https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80)
-<!-- _class: dark-background -->
 
 # **Platform Overview**
-
 ### Enterprise-Grade Data Processing Solution
 
-- **Real-time** data streaming capabilities
-- **Scalable** architecture supporting petabytes of data
-- **Machine Learning** integration for predictive analytics
-- **Multi-tenant** support with secure isolation
+- **Real-time** data streaming capabilities  
+- **Scalable** architecture supporting petabytes of data  
+- **Machine Learning** integration for predictive analytics  
+- **Multi-tenant** support with secure isolation  
 
 > Built for performance, scale, and reliability
 
